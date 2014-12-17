@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en" >
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Two Column Responsive</title>
+
+    <style>
+        /* use san serif font cause I likes it */
+        body {
+            font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+            font-size: 16px;
+        }
+        
+        /* center the header */
+        h1 {
+            text-align: center;
+        }
+        
+        /*
+        ** leave some space for readability
+        */
+        p {
+            margin: 0.5rem;    
+        }
+        h2, h3 {
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        
+        /*
+        ** we start with a one column layout suitable
+        ** for mobile devices and above.
+        */
+        .row {
+            width: 100%;
+            clear: both; /* clear float to return columns to left */
+        }
+        .column {
+            width: 100%;
+        }
+        
+        /*
+        ** enhance layout with two columns for 
+        ** tablets and above
+        */
+        @media screen and (min-width: 720px) {
+            /* 
+            ** float is required to get columns to go side-by-side 
+            */
+            .column {
+                float: left; 
+            }
+            
+            .double.column {
+                width: 50%;
+            }
+        }
+	</style>
+</head>
+<body>
+
+  <!-- Your code start -->
+    <h1>Simple Two Column Responsive</h1>
+    <div class="row">
+        <div class="column">
+            <h3>Column 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare porttitor viverra. Etiam fringilla augue orci, non porta mauris scelerisque quis. Etiam aliquet diam felis. Aenean sed maximus lacus. Integer nec metus odio. Phasellus vitae lacus in magna porttitor egestas. Sed finibus lorem at accumsan molestie. Mauris semper lacinia ante id porttitor. Vestibulum at risus ac sem egestas consectetur id ut enim. Phasellus eu dolor eu lorem tempor condimentum sed id risus. Suspendisse ut feugiat purus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed venenatis sapien vel urna condimentum, sit amet mollis felis consequat. Vivamus iaculis risus leo, sit amet aliquam ante bibendum in.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="double column">
+            <h3>Column 2</h3>
+            <p>Proin posuere turpis sit amet enim vulputate, at dignissim orci tincidunt. Aenean eu ipsum ut eros accumsan consequat. Quisque dignissim finibus arcu, a laoreet diam viverra in. Sed ac est pellentesque, vestibulum nisl sit amet, aliquet est. Vivamus rutrum nisl eu ex vestibulum, luctus accumsan nisi viverra. Ut feugiat eu libero et congue. Vivamus lacinia dictum ornare. Aliquam in leo quam. Quisque iaculis lorem sit amet sem ullamcorper scelerisque. Fusce dui lectus, tincidunt nec bibendum ut, condimentum a tellus.</p>
+            <p>Etiam sed tellus vel sem bibendum iaculis eu nec nulla. Aliquam erat volutpat. Donec a dui lobortis, pellentesque enim non, convallis augue. Nulla facilisi. Vivamus velit diam, sollicitudin at mollis nec, euismod nec tellus. Quisque bibendum posuere tellus eu varius. Aliquam erat volutpat.</p>
+        </div>
+        <div class="double column">
+            <h3>Column 3</h3>
+            <p>Maecenas vitae arcu in odio ultricies posuere. Ut vel volutpat leo. Praesent metus quam, tristique quis quam ac, luctus vulputate ligula. Cras non bibendum magna, et placerat ante. Vestibulum tortor sem, convallis et eleifend sed, fringilla eget augue. Suspendisse sit amet nisi ac justo dignissim consectetur quis eu elit. Pellentesque vestibulum cursus dignissim. Proin laoreet sit amet mi aliquam luctus. Nunc sit amet felis sed tellus laoreet pretium. Donec nec mi pharetra, consequat magna sed, rhoncus massa. Suspendisse fermentum urna et eros mattis, pellentesque rutrum massa ullamcorper. Aliquam malesuada viverra convallis. Vivamus ac justo ultrices arcu posuere aliquam. Curabitur molestie tellus sed erat imperdiet, eget sodales leo pellentesque.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <h3>Column 4</h3>
+            <p>In elementum nunc ut lorem sodales tristique in non risus. Nam aliquam, urna eu mattis vestibulum, purus nunc interdum justo, nec gravida ex risus eu nisi. Proin mollis mollis velit. Duis quam augue, posuere sit amet metus sed, sollicitudin aliquam orci. Aenean aliquam convallis est eget tempor. Ut nec iaculis massa. Mauris non imperdiet est, porta maximus mi. Suspendisse vestibulum diam sit amet urna venenatis, a ornare erat gravida. Fusce scelerisque efficitur massa id placerat. Morbi quam nibh, luctus in vehicula vel, placerat sit amet odio. Fusce vel consectetur nulla.</p>
+        </div>
+    </div>
+  <!-- Your code end -->
+
+</body>
+</html>
