@@ -5,7 +5,7 @@ A set of responsive templates to illustrate the simplest responsive techniques.
 
 [Simple Three Column Responsive, Wide Orphan](https://ezward.github.io/SimpleResponsive/simplethreecolumns.1.html)
 
-[Simple Three Column Responsive, Centered Orphan](https://ezward.github.io/SimpleResponsive/simplethreecolumns.1.html)
+[Simple Three Column Responsive, Centered Orphan](https://ezward.github.io/SimpleResponsive/simplethreecolumns.2.html)
 
 [Simple Two Column Responsive](https://ezward.github.io/SimpleResponsive/simpletwocolumns.html)
 
