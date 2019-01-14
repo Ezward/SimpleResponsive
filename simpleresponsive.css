@@ -1,0 +1,112 @@
+/*
+** css supports one to four columns and 3 screen sizes (desktop, tablet, phone approximately)
+**
+** we start with a one column layout suitable
+** for mobile devices and above.
+*/
+.row {
+    width: 100%;
+    clear: both; /* clear float to return columns to left */
+}
+.column {
+    width: 100%;
+}
+
+/*
+** enhance layout to support two columns
+** for tablets and above
+*/
+@media screen and (min-width: 720px) {
+    /* 
+    ** float is required to get columns to go side-by-side 
+    */
+    .column {
+        float: left; 
+    }
+
+    /*
+    ** enhance with two columns
+    */
+    .double.column {
+        width: 50%;
+    }
+
+    /*
+    ** Three columns is rendered as two columns
+    ** on a tablet device.
+    */
+    .triple.column {
+        width: 50%;
+    }
+
+    /* 
+    ** we want reset the float at the third column 
+    ** then center it.
+    */
+    .third.triple.column {
+        clear: both;
+    }
+    .third.triple.column.wideorphan {
+        width: 100%;
+    }
+    .third.triple.column.centerorphan {
+        position: relative;
+        left: 25%
+    }
+
+    /*
+    ** enhance to support 2 stacked columns for
+    ** 4 column content on tablets.
+    */
+    .quad.column {
+        width: 50%;
+    }
+
+    /* force break after second column */
+    .third.quad.column { 
+        clear: both; 
+    }
+}
+
+/*
+** enhance with full three columns for 
+** large screen devices.
+*/
+@media screen and (min-width: 1024px) {
+    /*
+    ** enhance to show full three columns
+    ** on large screen devices
+    */
+    .triple.column {
+        width: 33%;
+    }
+
+    /* 
+    ** reset float because we want the third column 
+    ** to be float inline with the others. 
+    */
+    .third.triple.column {
+        clear: none;
+    }
+
+    /* reset to three columns */
+    .third.triple.column.wideorphan,
+    .third.triple.column.centerorphan
+    {
+        position: inherit;
+        width: 33%;
+    }
+
+
+    /*
+    ** enhance with four columns
+    */
+    .quad.column {
+        width: 25%;
+    }
+
+    /* clear break after second column */
+    .third.quad.column { 
+        clear: none;
+    }
+}
